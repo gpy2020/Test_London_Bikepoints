@@ -1,0 +1,2 @@
+export const LOAD_BIKESTOPS = "LOAD_BIKESTOPS";
+export const SET_BIKESTOPS = "SET_BIKESTOPS";
