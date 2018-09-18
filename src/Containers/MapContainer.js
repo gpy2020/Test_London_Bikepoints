@@ -8,7 +8,7 @@ class MapContainer extends Component {
     super();
     this.state = {
       center: [51.507351, -0.12766],
-      zoom: 9
+      zoom: 13
     };
   }
 

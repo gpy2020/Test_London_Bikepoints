@@ -13,7 +13,7 @@ class BikestopOnMapContainer extends Component {
       bikestop: {},
       mapState: {
         center: [51.507351, -0.12766],
-        zoom: 9
+        zoom: 11
       }
     };
   }

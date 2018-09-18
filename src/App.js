@@ -18,20 +18,22 @@ class App extends Component {
       <div>
         {this.props.bikestops.map((bikestop, i) => {
           return (
-            <Link key={i} to={`/map/${bikestop.id}`}>
+            <Link key={i} to={`/map/${bikestop.id}`} className="bikestopLink">
               <div>
-                <p>{`name: ${bikestop.commonName}`}</p>
-                <p>{`coords: lat: ${bikestop.lat} | lon: ${bikestop.lon}`}</p>
-                <p>{`total amount of docks: ${
+                <p className="paragraph">{`name: ${bikestop.commonName}`}</p>
+                <p className="paragraph">{`coords: lat: ${
+                  bikestop.lat
+                } | lon: ${bikestop.lon}`}</p>
+                <p className="paragraph">{`total amount of docks: ${
                   bikestop.additionalProperties[8].value
                 }`}</p>
-                <p>{`number of occupied docks: ${
+                <p className="paragraph">{`number of occupied docks: ${
                   bikestop.additionalProperties[6].value
                 }`}</p>
-                <p>{`number of free docks: ${
+                <p className="paragraph">{`number of free docks: ${
                   bikestop.additionalProperties[7].value
                 }`}</p>
-                <hr />
+                <hr className="paragraph" size="1" noshade />
               </div>
             </Link>
           );

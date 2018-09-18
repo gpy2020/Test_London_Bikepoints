@@ -17,6 +17,12 @@ function bikestopOnMap(props) {
               free places: ${props.bikestop.additionalProperties[7].value} | 
               occupied places: ${props.bikestop.additionalProperties[6].value}`
               }}
+              options={{
+                iconColor:
+                  props.bikestop.additionalProperties[7].value > 0
+                    ? "#0095b6"
+                    : "#686868"
+              }}
             />
           </Map>
         </YMaps>
